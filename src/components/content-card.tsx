@@ -10,11 +10,13 @@ interface ContentCardProps {
   title: string;
   des: string;
   img: string;
+  alt: string;
 }
 export function ContentCard({
   title,
   des,
   img,
+  alt,
 }: ContentCardProps) {
   return (
     <Card
@@ -31,7 +33,7 @@ export function ContentCard({
           width={200}
           height={200}
           src={img}
-          alt="testimonial image"
+          alt={alt}
           className="h-full w-full object-cover"
         />
       </CardHeader>

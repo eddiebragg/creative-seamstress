@@ -9,24 +9,25 @@ const SERVICE_CONTENT = [
     title: "Dress Alterations",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque arcu, scelerisque ac velit in, dapibus tincidunt lorem. ",
     img: "/image/dress.jpg",
+    alt: "Dress Alterations",
   },
   {
     title: "Clothing Repairs",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque arcu, scelerisque ac velit in, dapibus tincidunt lorem. ",
     img: "/image/repair.jpg",
+    alt: "Clothing Repairs",
   },
   {
     title: "General Alterations",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque arcu, scelerisque ac velit in, dapibus tincidunt lorem. ",
-    name: "Marcell Glock",
-    position: "Chief Executive, Spotify",
-    panel: "",
     img: "/image/zip.jpg",
+    alt: "General Alterations",
   },
   {
     title: "Seaonsal Workshops",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque arcu, scelerisque ac velit in, dapibus tincidunt lorem. ",
     img: "/image/workshop.jpg",
+    alt: "Workshops",
   },
 ];
 

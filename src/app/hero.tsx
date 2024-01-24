@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { IconButton, Button, Typography } from "@material-tailwind/react";
-import { PlayIcon } from "@heroicons/react/24/solid";
+import { Button, Typography } from "@material-tailwind/react";
 
 function Hero() {
   return (
@@ -14,6 +13,7 @@ function Hero() {
             width={300}
             height={300}
             src="/image/cs-logo.svg"
+            alt="Creative Seamstress logo"
           />
         <Typography
           variant="lead"

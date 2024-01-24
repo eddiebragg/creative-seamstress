@@ -1,7 +1,7 @@
 import { Typography, Button, IconButton } from "@material-tailwind/react";
 
 const CURRENT_YEAR = new Date().getFullYear();
-const LINKS = ["Company", "About Us", "Team", "Products", "Blog"];
+const LINKS = ["Okehampton", "Devon", "07590636466"];
 
 export function Footer() {
   return (
