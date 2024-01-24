@@ -4,19 +4,18 @@ import {
   Card,
   CardHeader,
   CardBody,
-  Avatar,
 } from "@material-tailwind/react";
 
-interface EventContentCardProps {
+interface ContentCardProps {
   title: string;
   des: string;
   img: string;
 }
-export function EventContentCard({
+export function ContentCard({
   title,
   des,
   img,
-}: EventContentCardProps) {
+}: ContentCardProps) {
   return (
     <Card
       color="transparent"
@@ -48,4 +47,4 @@ export function EventContentCard({
   );
 }
 
-export default EventContentCard;
+export default ContentCard;

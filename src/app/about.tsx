@@ -1,15 +1,12 @@
 "use client";
 
-import Image from "next/image";
-import { Card, CardBody, Typography } from "@material-tailwind/react";
-import EventContentCard from "@/components/event-content-card";
+import ContentCard from "@/components/content-card";
 
-
-export function AboutEvent() {
+export function About() {
   return (
     <section className="py-8 px-8 lg:py-20 bg-gray-300" id="about">
       <div className="mx-auto container">
-          <EventContentCard key="about" title="About Me" 
+          <ContentCard key="about" title="About Me" 
           des="Growing up in a creative family, 
                I was immersed in a world of artistic expression from an early age.
                 This passion led me to pursue a degree in embroidery at Manchester Metropolitan University, where I proudly earned a first. Since then, I have been on a continuous journey of self-discovery and skill development in the art of sewing. As a devoted and skilled seamstress, I bring years of experience and a deep love for the craft to my sewing room. Each stitch tells a tale, and I'm excited to weave unique narratives through my bespoke services." img="/image/kate.jpg" />
@@ -18,4 +15,4 @@ export function AboutEvent() {
   );
 }
 
-export default AboutEvent;
+export default About;
