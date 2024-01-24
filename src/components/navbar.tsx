@@ -26,7 +26,7 @@ function NavItem({ children, href }: NavItemProps) {
       <Typography
         as="a"
         href={href || "#"}
-        target={href ? "_blank" : "_self"}
+        target="_self"
         variant="paragraph"
         className="flex items-center gap-2 font-medium"
       >
@@ -38,17 +38,23 @@ function NavItem({ children, href }: NavItemProps) {
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "Home",
     icon: RectangleStackIcon,
   },
   {
-    name: "Account",
+    name: "Services",
     icon: UserCircleIcon,
+    href: "#services"
   },
   {
-    name: "Docs",
+    name: "About",
     icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
+    href: "#about",
+  },
+  {
+    name: "Contact",
+    icon: CommandLineIcon,
+    href: "#",
   },
 ];
 
@@ -88,31 +94,28 @@ export function Navbar() {
       className="fixed top-0 z-50 border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
+      {/* {isScrolling ? 
         <Typography
-          color={isScrolling ? "blue-gray" : "white"}
-          className="text-lg font-bold"
+          color="gray"
+          className="text-xl font-bold"
         >
-          Material Tailwind
-        </Typography>
+          Kate Bragg - Creative Seamstress
+        </Typography>: ""} */}
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
             isScrolling ? "text-gray-900" : "text-white"
           }`}
         >
-          {NAV_MENU.map(({ name, icon: Icon, href }) => (
+          {NAV_MENU.map(({ name, href }) => (
             <NavItem key={name} href={href}>
-              <Icon className="h-5 w-5" />
               <span>{name}</span>
             </NavItem>
           ))}
         </ul>
+
+
         <div className="hidden items-center gap-4 lg:flex">
-          <Button color={isScrolling ? "gray" : "white"} variant="text">
-            Log in
-          </Button>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color={isScrolling ? "gray" : "white"}>blocks</Button>
-          </a>
+          <Button color="gray">book an appointment</Button>
         </div>
         <IconButton
           variant="text"
@@ -130,18 +133,14 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900">
-            {NAV_MENU.map(({ name, icon: Icon, href }) => (
+            {NAV_MENU.map(({ name, href }) => (
               <NavItem key={name} href={href}>
-                <Icon className="h-5 w-5" />
                 {name}
               </NavItem>
             ))}
           </ul>
           <div className="mt-6 flex items-center gap-4">
-            <Button variant="text">Log in</Button>
-            <a href="https://www.materila-tailwind.com/blocks" target="_blank">
-              <Button color="gray">blocks</Button>
-            </a>
+            <Button color="gray">book an appointment</Button>
           </div>
         </div>
       </Collapse>

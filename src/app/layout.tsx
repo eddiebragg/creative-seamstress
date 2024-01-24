@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <script
           defer
@@ -33,7 +33,6 @@ export default function RootLayout({
       <body className={roboto.className}>
         <Layout>
           {children}
-          <FixedPlugin />
         </Layout>
         <link
           rel="stylesheet"
