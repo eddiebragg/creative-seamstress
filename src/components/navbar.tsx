@@ -10,7 +10,6 @@ import {
   RectangleStackIcon,
   UserCircleIcon,
   CommandLineIcon,
-  Squares2X2Icon,
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
@@ -54,7 +53,7 @@ const NAV_MENU = [
   {
     name: "Contact",
     icon: CommandLineIcon,
-    href: "#",
+    href: "#contact",
   },
 ];
 

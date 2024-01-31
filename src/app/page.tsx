@@ -4,7 +4,9 @@ import { Navbar, Footer } from "@/components";
 // sections
 import Hero from "./hero";
 import About from "./about";
+import Contact from "./contact";
 import Services from "./services";
+
 
 
 export default function Portfolio() {
@@ -14,6 +16,7 @@ export default function Portfolio() {
       <Hero />
       <Services />
       <About />
+      <Contact />
       <Footer />
     </>
   );

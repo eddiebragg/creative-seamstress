@@ -34,7 +34,7 @@ export function Footer() {
           </ul>
           <div className="flex w-fit justify-center gap-2">
             <a target="_blank" href="https://www.facebook.com/katherynbragg">
-              <IconButton size="sm" color="gray" variant="text">
+              <IconButton size="lg" color="gray" variant="text">
                 <i className="fa-brands fa-facebook text-lg" />
               </IconButton>
             </a>
